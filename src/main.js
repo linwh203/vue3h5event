@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import * as VueRouter from 'vue-router'
 import App from "./App.vue";
+import './index.css';
 import "./assets/css/reset.css";
 import './assets/js/TweenMax.min';
 import './assets/js/imagesLoader.min';
@@ -9,6 +10,7 @@ import './assets/js/imagesLoader.min';
 const routes = [
     { path: '/buzhi', component: () => import('./pages/buzhi.vue') },
     { path: '/one', component: () => import('./pages/one.vue') },
+    { path: '/', redirect: '/one' }
 ]
 
 const router = VueRouter.createRouter({
