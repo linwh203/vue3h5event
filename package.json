@@ -4,16 +4,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "ts": "ts-node-dev --respawn --transpile-only ./src/tsdemo/demos6.ts"
   },
   "dependencies": {
     "@types/echarts": "^4.9.7",
     "@types/less": "^3.0.2",
+    "@types/reflect-metadata": "^0.1.0",
     "@types/vue-router": "^2.0.0",
     "echarts": "^5.1.0",
     "echarts-gl": "^2.0.4",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
+    "reflect-metadata": "^0.1.13",
     "scss": "^0.2.4",
     "scss-loader": "^0.0.1",
     "vue": "^3.0.5",
@@ -22,6 +25,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",
     "@vue/compiler-sfc": "^3.0.5",
+    "ts-node-dev": "^1.1.6",
     "vite": "^2.1.5"
   }
 }
