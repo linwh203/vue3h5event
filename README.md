@@ -50,3 +50,7 @@
 ```
 
 4.  btw, md guide [https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]
+
+### deploy site: netlify
+
+[https://app.netlify.com/teams/linwh203/builds/60864789cd53b3248fa40d6b]

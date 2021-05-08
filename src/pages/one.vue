@@ -314,7 +314,7 @@ preLoad();
 #iphone-12-pro {
   &:checked {
     & ~ .tab-iphone-12-pro {
-      @apply flex;
+      @apply flex flex-col-reverse md:flex-row;
     }
     & ~ .nav label[for="iphone-12-pro"] span {
       @apply bg-gray-200;
