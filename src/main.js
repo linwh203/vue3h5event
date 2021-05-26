@@ -10,6 +10,7 @@ import './assets/js/imagesLoader.min';
 const routes = [
     { path: '/buzhi', component: () => import('./pages/buzhi.vue') },
     { path: '/one', component: () => import('./pages/one.vue') },
+    { path: '/tailwind', component: () => import('./pages/tailwind.vue') },
     { path: '/', redirect: '/one' }
 ]
 

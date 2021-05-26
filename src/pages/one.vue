@@ -1,5 +1,10 @@
 <template>
   <div class="container mx-auto">
+    <!-- <iframe
+      class="h-screen"
+      src="https://60864789cd53b3248fa40d6b--eager-heyrovsky-ec83ef.netlify.app/#/buzhi"
+      frameborder="0"
+    ></iframe> -->
     <input type="radio" name="tab" id="iphone-12-pro" checked class="hidden" />
     <input type="radio" name="tab" id="iphone-12" class="hidden" />
     <input type="radio" name="tab" id="iphone-se" class="hidden" />
