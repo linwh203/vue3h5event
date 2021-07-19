@@ -58,7 +58,7 @@ const onHaibaoSrc = (src) => {
   state.haibaoSrc = src;
 };
 
-function preLoad() {
+function preLoad () {
   const loader = new ImagesLoader();
   loader.loadImages(
     [
@@ -217,6 +217,13 @@ function preLoad() {
 preLoad();
 </script>
 <style lang="less">
+// .allwrapper {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+// }
 /* 公共样式 */
 .wrapper {
   position: absolute;

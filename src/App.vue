@@ -159,8 +159,11 @@ onMounted(() => {
 </script>
 
 <style lang="less">
+// html {
+//   overflow: hidden;
+// }
 body {
-  // position: fixed;
+  position: fixed;
 }
 #app {
   font-family: Helvetica, Arial, sans-serif;

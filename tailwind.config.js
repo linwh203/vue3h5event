@@ -1,3 +1,12 @@
+function withOpacity (variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`
+    }
+    return `rgb(var(${variableName}))`
+  }
+}
+
 module.exports = {
   purge: [
     "./index.html",
@@ -5,7 +14,27 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        skin: {
+          base: 'var(--color-text-base)',
+          muted: 'var(--color-text-muted)',
+        },
+      },
+      backgroundColor: {
+        skin: {
+          fill: 'var(--color-fill)',
+          'button-accent': 'var(--color-button-accent)',
+          'button-accent-hover': 'var(--color-button-accent-hover)',
+          'button-muted': withOpacity('--color-button-muted')
+        }
+      },
+      gradientColorStops: {
+        skin: {
+          hue: 'var(--color-fill)',
+        }
+      }
+    },
   },
   variants: {
     extend: {},
